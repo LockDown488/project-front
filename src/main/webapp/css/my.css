@@ -1,14 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #39ff14;
+    text-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+}
+
 .bordered-table {
+    width: 90%;
+    margin: 20px auto;
     border-collapse: collapse;
-    width: 100%;
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.3);
 }
 
-.bordered-table th, .bordered-table td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: left;
+.bordered-table th,
+.bordered-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #39ff14;
+    transition: all 0.3s;
 }
 
-.items {
+.bordered-table thead th {
+    background-color: #1a1a1a;
+    color: #39ff14;
+    text-shadow: 0 0 10px #39ff14;
+}
+
+.bordered-table tbody tr:hover {
+    background-color: rgba(57, 255, 20, 0.1);
+}
+
+.bordered-table tbody tr:nth-child(even) {
+    background-color: #1a1a1a;
+}
+
+.bordered-table tbody tr:nth-child(odd) {
+    background-color: #262626;
+}
+
+.bordered-table tbody td {
+    color: #fff;
+}
+
+#image_edit img,
+#image_delete img {
+    width: 24px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+#image_edit img:hover,
+#image_delete img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.5);
+}
+
+#pageNumbers {
+    margin-top: 20px;
+}
+
+#pageNumbers button {
+    background-color: #1a1a1a;
+    color: #39ff14;
+    border: 1px solid #39ff14;
+    padding: 5px 10px;
+    margin: 5px;
+    transition: all 0.3s;
+}
+
+#pageNumbers button:hover {
+    background-color: #39ff14;
+    color: #1a1a1a;
+    cursor: pointer;
+}
+
+#pageNumbers button:disabled {
+    background-color: #39ff14;
+    color: #1a1a1a;
+    cursor: default;
+}
+
+#createAccountForm {
+    margin-top: 20px;
+}
+
+#createAccountForm label {
     display: inline-block;
+    width: 120px;
+    margin-bottom: 10px;
+    color: #39ff14;
+    text-shadow: 0 0 10px #39ff14;
+}
+
+#createAccountForm input,
+#createAccountForm select {
+    margin-bottom: 10px;
+    width: 200px;
+    background-color: #1a1a1a;
+    border: 1px solid #39ff14;
+    color: #fff;
+    padding: 5px;
+    transition: all 0.3s;
+}
+
+#createAccountForm input:focus,
+#createAccountForm select:focus {
+    outline: none;
+    box-shadow: 0 0 10px #39ff14;
+}
+
+#createAccountForm button {
+    margin-top: 10px;
+    background-color: #1a1a1a;
+    color: #39ff14;
+    border: 1px solid #39ff14;
+    padding: 5px 10px;
+    transition: all 0.3s;
+}
+
+#createAccountForm button:hover {
+    background-color: #39ff14;
+    color: #1a1a1a;
+    cursor: pointer;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #39ff14;
+    box-shadow: 0 0 10px #39ff14;
+    margin: 20px auto;
+    width: 80%;
 }
